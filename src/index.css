@@ -17,6 +17,49 @@ body {
   background: var(--light-color-background);
 }
 
+.header {
+  text-align: center;
+  margin-top: 20px;
+  color: var(--dark-color);
+}
+
+.form-label {
+  margin: 25px 0px 0px 30px;
+  height: 40px;
+  width: 100%;
+  display: block;
+  border: none;
+  border-radius: 5px;
+  color: var(--dark-color);
+}
+
+.select-menu {
+  height: 50px;
+  width: 300px;
+  margin: 0px 40px 30px 20px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: var(--light-color-text);
+}
+
+.btn {
+  margin-left: 20px;
+  background: var(--dark-color);
+  font-size: 16px;
+  color: white;
+  height: 50px;
+  width: 150px;
+  padding: 16px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: rgb(22, 86, 86, 0.5);
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -74,4 +117,16 @@ body {
   list-style: none;
   color: var(--light-color-text);
   font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 300px) {
+  .card-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
